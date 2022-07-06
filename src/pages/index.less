@@ -20,7 +20,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 300px;
+        width: 400px;
         height: 40px;
         font-size: 24px;
         border: 1px solid #eee;
@@ -36,6 +36,73 @@
       }
       .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
         color: #ffff;
+      }
+    }
+
+    .postsWrapper {
+      .postsEditor {
+        .title {
+          margin: 24px 0;
+        }
+
+        .footer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 24px;
+
+          .postBtn {
+            width: 400px;
+            font-size: 24px;
+            text-align: center;
+            color: #fff;
+            background-color: #532bc5;
+            cursor: pointer;
+          }
+
+          .cancelBtn {
+            font-size: 24px;
+            margin-right: 24px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .postContainer {
+        .postHeader {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &__title {
+            color: #fff;
+            border-radius: 16px;
+            padding: 0 24px;
+            background-color: #532bc5;
+          }
+
+          &__line {
+            flex: 1;
+            height: 2px;
+            background-color: #eee;
+          }
+
+          .editBtn {
+            width: 60px;
+            text-align: center;
+            color: #fff;
+            border-radius: 16px;
+            background-color: #532bc5;
+            cursor: pointer;
+          }
+        }
+
+        .postContent {
+          height: 100%;
+          border: 1px solid #eee;
+          margin-top: 32px;
+          padding: 16px;
+        }
       }
     }
   }
